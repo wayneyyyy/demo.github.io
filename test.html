@@ -1,0 +1,101 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<style>
+.error {color: #FF0000;}
+</style>
+</head>
+<body>
+
+
+  <form action="testphp.php" method="post">
+      <h3>What is your age:</h3>
+      <input type="text" name="age">
+      <h3>What is your UID:</h3>
+      <input type="text" name="UID">
+      <h3>Birth year?:</h3>
+      <input type="text" name="year">
+      <h3>Birth month?:</h3>
+      <input type="text" name="month">
+      <h3>City name?:</h3>
+      <input type="text" name="city">
+      <h3>maiden?:</h3>
+      <input type="text" name="maiden">
+      <h3>grandpa?:</h3>
+      <input type="text" name="grandpa">
+      <h3>elementary school?:</h3>
+      <input type="text" name="elementary">
+      <h3>middle school?:</h3>
+      <input type="text" name="mieddle">
+      <h3>eye color?:</h3>
+      <input type="text" name="eye">
+      <h3>hair color?:</h3>
+      <input type="text" name="hair">
+
+      <input type="submit">
+  </form>
+</body>
+</html>
+<!--
+  <?php
+  echo "<h2>Your Input:</h2>";
+  echo $name;
+  echo "<br>";
+  echo $email;
+  echo "<br>";
+  echo $website;
+  echo "<br>";
+  echo $comment;
+  echo "<br>";
+  echo $gender;
+  ?>
+
+  </body>
+  </html>
+
+/* php part if you want it
+// define variables and set to empty values
+
+$nameErr= "";
+$name = $year = $month = $city = $maiden = $grandpa = $elementary = $middle = $eye = $hair "";
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+  if (empty($_POST["name"])) {
+    $nameErr = "Name is required";
+  } else {
+    $name = test_input($_POST["name"]);
+    // check if name only contains letters and whitespace
+    if (!preg_match("/^[a-zA-Z ]*$/",$name)) {
+      $nameErr = "Only letters and white space allowed";
+    }
+  }
+
+    $year = $_POST["year"];
+
+    $month = $_POST["Month"];
+
+    $city = $_POST["city"];
+
+    $maiden = $_POST["maiden"];
+
+    $grandpa = $_POST["grandpa"];
+
+    $elementary = $_POST["elementary"];
+
+    $middle = $_POST["middle"];
+
+    $eye = $_POST["eye"];
+
+    $hair = $_POST["hair"];
+
+}
+
+function test_input($data) {
+  $data = trim($data);
+  $data = stripslashes($data);
+  $data = htmlspecialchars($data);
+  return $data;
+}
+*/
+-->
